@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Creative Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button class="active" data-category="all">All</button>
+        <button data-category="nature">Nature</button>
+        <button data-category="city">City</button>
+        <button data-category="tech">Tech</button>
+        <button data-category="food">Food</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <!-- Nature -->
+        <div class="gallery-item nature"><img src="https://picsum.photos/id/1018/600/400" alt=""></div>
+        <div class="gallery-item nature"><img src="https://picsum.photos/id/1025/600/400" alt=""></div>
+        <div class="gallery-item nature"><img src="https://picsum.photos/id/1011/600/400" alt=""></div>
+
+        <!-- City -->
+        <div class="gallery-item city"><img src="https://picsum.photos/id/1015/600/400" alt=""></div>
+        <div class="gallery-item city"><img src="https://picsum.photos/id/1031/600/400" alt=""></div>
+
+        <!-- Tech -->
+        <div class="gallery-item tech"><img src="https://picsum.photos/id/180/600/400" alt=""></div>
+        <div class="gallery-item tech"><img src="https://picsum.photos/id/1005/600/400" alt=""></div>
+
+        <!-- Food -->
+        <div class="gallery-item food"><img src="https://picsum.photos/id/1080/600/400" alt=""></div>
+        <div class="gallery-item food"><img src="https://picsum.photos/id/292/600/400" alt=""></div>
+        <div class="gallery-item food"><img src="https://picsum.dev/image/329/view" alt=""></div>
+        <div class="gallery-item food"><img src="https://picsum.photos/id/431/600/400" alt=""></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+        <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
